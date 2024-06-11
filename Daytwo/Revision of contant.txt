@@ -1,0 +1,55 @@
+Descriptian of files:
+.......................................................................................
+to Write in file three  step to write:
+1-open fopen(  $filename , "w")
+2-writefwrite($filehandler,
+"I am writing using fwrite");
+
+3-close   fclose( $filehandler);
+to read of file two step:
+1- to open the file
+$filehandler=fopen("
+welcome.txt"
+,
+"
+r
+");
+2- to close 
+
+to know the file:
+$filesize=filesize("welcome.txt");
+......................................................................
+Foef():file end of file function takes a file handleas its single parameter. It returns true if the file  
+
+pointer is at the end of the file.
+<?php
+$filehandler=fopen("yasmeen.txt"
+,
+"r");
+$filesize=filesize("yasmeen.txt");
+echo $filesize;
+while (!feof($filehandler)){
+var_dump(fgetcsv($filehandler,100,
+"n")); ;
+}
+fclose( $filehandler);?>;ﬂ· „«  ·«ﬁÌ Õ—› n divide it to size 100 if iput number =3 ÂÌ„‘Ì ﬂ·  ·«  ŒÿÊ«  Ê·ﬁÌ «·Õ—› ÂÌﬁ”„Â 
+
+Fgets():This function reads one line at a time from a file
+...........
+readfile("welcome.txt");
+œÂ »Ì⁄„· «· ·«  Õ«Ã«  »Ì› Õ Ê Ìﬁ›· Ê Ìﬁ—« «·›«Ì· 
+.................................
+to copy the contant to another file:
+copy(yasmeen.txt, yasmen3.txt)to copy contant of file of yasmeen in yasmeen3
+...............................
+Arrey:
+to compact arrey:
+$result = compact("firstname"
+,
+"lastname"
+,
+"age");
+2- to sort arrey:
+
+sort($arrey);
+3-

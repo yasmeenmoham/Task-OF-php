@@ -29,9 +29,9 @@
   }
   label {
     font-weight: bold;
-    display: block;
+ 
     margin-bottom: 5px;
-   color:ornage; /* Set your desired color here */
+   color:black; /* Set your desired color here */
   }
   input[type="text"],
   input[type="password"],
