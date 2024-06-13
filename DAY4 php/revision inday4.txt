@@ -1,0 +1,50 @@
+Day4
+................
+1-mysqli
+mysqli_free result to pravient conflact between two for example two insert
+2-PDO
+3-OOP
+4-Transactian begin and excacute and commit and rollback
+  task4:
+taskmysqli 
+file for pdo and object 
+Revision of Day4:
+1-Executing query
+mysqli_quary($conn,$quary)
+.....................................
+2-to get the number of the row :
+$result=$conn->query($sql)
+$number_of_row=mysqli_num_rows($result)
+var_dump($number_of_row)
+........................................................................................
+3-$row = $result->fetch_assoc()
+to prite all contant in the table by row in database.Fetching rows as associative arrays
+...................................................................
+4- mysql-oop
+try {
+$conn2 =new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE,3308);
+// #escaped seq used to make data comptable with mySQL but not securingit
+$welcometext='welcome to oop';
+$escaped =$conn2->real_escape_string ($welcometext);
+if ($conn2->connect_errno) {
+trigger_error($conn2->connect_error);
+printf("Connect failed:%s\n"
+,$conn2->connect_error);
+exit();
+}
+}catch (Exception $e){
+echo 'Connection failed:'
+. $e->getMessage();
+} 
+...............................................
+POD
+$dsn = 'mysql:dbname=osgr2;host=127.0.0.1; port=3308;'; #port number
+$user ='root';
+$password ='';
+try {
+$db =new PDO($dsn, $user, $password);
+var_dump($db);
+}catch (PDOException $e) {
+echo 'Connection failed:'
+.$e->getMessage();
+}
